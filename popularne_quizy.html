@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            background-color: #a2dcca;
+        }
+
+        img {
+            border: none;
+
+        }
+
+        .wrapper {
+            width: 965px;
+            margin: 0 auto 100px;
+            position: relative;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-family: arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 35px;
+            border: 5px solid white;
+        }
+
+        /* góra */
+        .danger {
+            position: absolute;
+            margin: 30px 872px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+        }
+
+        .warning {
+            position: relative;
+            margin: 0 700px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+
+        }
+
+        .reset {
+            position: relative;
+            margin: 0 600px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+        }
+
+
+        .logo {
+            display: block;
+            width: 190px;
+            height: 59px;
+            margin: 25px auto 25px 33px;
+            position: relative;
+            float: left;
+
+        }
+
+
+
+        .tlo_gora {
+            width: 967px;
+            margin: 0 auto;
+            height: 79px;
+            position: relative;
+
+        }
+
+        .gora {
+            width: 965px;
+            background-color: white;
+        }
+
+        /* nawigacja */
+
+        nav {
+            position: absolute;
+            top: 67px;
+            right: 20px;
+        }
+
+        nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+        }
+
+        nav li a {
+            padding: 40px 28px 12px 28px;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            font-size: 24px;
+            color: black;
+            background-color: white;
+        }
+
+        nav li a:hover {
+            background: black;
+            color: white;
+        }
+
+        h1 {
+            width: 885px;
+            height: 200px;
+            margin: -100px auto 0 auto;
+
+        }
+
+        .quizy {
+            width: 856px;
+            margin: 20px auto 20px;
+
+        }
+
+        .popularne_quizy a {
+            display: block;
+            position: relative;
+            width: 222px;
+            height: 180px;
+            float: left;
+            margin: 40px 30px 0 50px;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .popularne_quizy a:nth-of-type(3n+1) {
+            margin: 36px 30px 0 0;
+        }
+
+
+
+        .popularne_quizy a:hover {
+            opacity: 0.7;
+            filter: alpha(opacity(70));
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="tlo_gora">
+
+
+
+            <p>
+                <a href="logout.php" class="danger">Wyloguj</a>
+            </p>
+        </div>
+
+
+        <header class="gora">
+            <div class="logo">
+                <a href="logo.html">
+                    <img src="img/logo.jpg" alt="logo_strony_quizowanie">
+                </a>
+            </div>
+
+            <br class="clear">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="uczSie.html">Ucz się</a></li>
+                    <li><a href="nowe_quizy.html">Nowe Quizy</a></li>
+                    <li><a href="popularne_quizy.html">Popularne Quizy</a></li>
+                    <li><a href="o_nas.html">O nas</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </div>
+    <div class="baner">
+        <header>
+
+
+            <h1>Wybierz quiz, aby sprawdzić czy twoja nauka była efektywna</h1>
+        </header>
+
+        <main>
+            <div class="quizy">
+                <div class="popularne_quizy">
+                    <a href="quiz_1_odp.html"><img src="img/popularne_obraz_1.jpg" alt="obraz1"></a>
+                    <a href="quiz_2_odp.html"><img src="img/popularne_obraz_2.jpg" alt="obraz2"></a>
+                    <a href="quiz_3_odp.html"><img src="img/popularne_obraz_3.jpg" alt="obraz3"></a>
+                    <a href="quiz_4_odp.html"><img src="img/popularne_obraz_4.jpg" alt="obraz4"></a>
+                    <a href="quiz_5_odp.html"><img src="img/popularne_obraz_5.jpg" alt="obraz5"></a>
+                    <a href="quiz_6_odp.html"><img src="img/popularne_obraz_6.jpg" alt="obraz6"></a>
+                </div>
+            </div>
+
+        </main>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<?php
+// Initialize the session
+session_start();
+ 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: login.php");
+    exit;
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Quizowanie</title>
+    <meta name="description" content="Nauka i quizy">
+    <meta name="author" content="Marek Mańka">
+    <meta name="keywords" content="quizy, popularne, nowe, nauka, quizowanie">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--    <script src="script.js"></script>-->
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="tlo_gora">
+
+
+
+            <p>
+                <a href="logout.php" class="danger">Wyloguj</a>
+
+                <a href="reset-password.php" class="warning ">Reset Your Password</a>
+            </p>
+        </div>
+
+
+        <header class="gora">
+            <div class="logo">
+                <a href="logo.html">
+                    <img src="img/logo.jpg" alt="logo_strony_quizowanie">
+                </a>
+            </div>
+
+            <br class="clear">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="uczSie.html">Ucz się</a></li>
+                    <li><a href="nowe_quizy.html">Nowe Quizy</a></li>
+                    <li><a href="popularne_quizy.html">Popularne Quizy</a></li>
+                    <li><a href="o_nas.html">O nas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="baner">
+            <div class="slogan_gora">
+                <p>ucz się</p>
+            </div>
+            <div class="slogan_sredni">
+                <p>baw się</p>
+            </div>
+            <div class="slogan_dol">
+                <p>quizuuuj</p>
+            </div>
+
+            <div class="cien_gora_lewy">
+            </div>
+
+            <div class="boxy_gora">
+                <div class="box_gora_1">
+                    <a href="#"></a>
+                </div>
+                <div class="box_gora_2">
+                    <a href="#"></a>
+                </div>
+                <div class="box_gora_3">
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="cien_gora_prawy">
+
+        </div>
+
+        <div class="cien_baner_dol">
+
+        </div>
+    </div>
+
+
+    <main>
+        <section>
+            <div class="zawartosc">
+                <div class="artykuly">
+                    <article>
+                        <header>
+                            <h2>Nauka przez Quizy?</h2>
+                        </header>
+                        <p>W dzisiejszych czasach wiele osób lubi uczyć się dzięki quizom</p>
+                        <footer><a href="uczSie.html">Zobacz Więcej</a>
+                        </footer>
+                    </article>
+
+                    <article class="drugi_article">
+                        <header>
+                            <h2>Opinie użytkowników</h2>
+                        </header>
+                        <p>Bardzo wiele osób poleca naukę przez quizy</p>
+                        <footer><a href="opinie.html">Zobacz Więcej</a></footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2>Zapisz się do newslleter</h2>
+                        </header>
+                        <p>Otrzymuj powiadomienia o nowych zniżkach i promocjach, nieważne gdzie jesteś. </p>
+                        <footer><a href="#">Zobacz Więcej</a></footer>
+                    </article>
+
+                    <div class="cien_artykuly">
+                    </div>
+                    <br class="clear">
+                </div>
+
+
+                <h2>Popularne Quizy</h2>
+                <div class="popularne_quizy">
+                    <a href="quiz_1_odp.html"><img src="img/popularne_obraz_1.jpg" alt="obraz1"></a>
+                    <a href="quiz_2_odp.html"><img src="img/popularne_obraz_2.jpg" alt="obraz2"></a>
+                    <a href="quiz_3_odp.html"><img src="img/popularne_obraz_3.jpg" alt="obraz3"></a>
+                    <a href="quiz_4_odp.html"><img src="img/popularne_obraz_4.jpg" alt="obraz4"></a>
+                    <a href="quiz_5_odp.html"><img src="img/popularne_obraz_5.jpg" alt="obraz5"></a>
+                    <a href="quiz_6_odp.html"><img src="img/popularne_obraz_6.jpg" alt="obraz6"></a>
+                </div>
+                <br class="clear">
+            </div>
+        </section>
+    </main>
+
+    <footer class="stopka">
+        <div class="zawartosc_stopki">
+
+
+            <div class="wydawnictwo">
+                <h3>Wydawnictwo</h3>
+                <ul>
+                    <li><a href="regulamin.html">Regulamin</a></li>
+                    <li><a href="regulamin.html">Polityka prywatności</a></li>
+                    <li><a href="#">Współpraca</a></li>
+                </ul>
+            </div>
+
+            <div class="o_quizach">
+                <h3>O quizach</h3>
+                <ul>
+                    <li><a href="nowe_quizy.html">o naszych quizach</a></li>
+                    <li><a href="nowe_quizy.html">najnowsze quizy</a></li>
+                    <li><a href="opinie.html">opinie</a></li>
+                </ul>
+            </div>
+
+            <div class="pomoc">
+                <h3>Pomoc</h3>
+                <ul>
+                    <li><a href="#">zadawane pytania</a></li>
+                    <li><a href="#">błedy w quizach</a></li>
+                </ul>
+            </div>
+
+            <div class="kontakt">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><a href="#">mail: quiz@gmail.com</a></li>
+                    <li>infolinia: 700 900 700</li>
+                    <li>tel: 912 293 921</li>
+                    <li><a href="#">Cieszyn ul.Katowicka12</a></li>
+                    <li>43-413 Cieszyn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="dol_strony">
+        <p>Copyright @ 2021 Marek, Marcin, Waldemar, Aneta</p>
+    </div>
+
+</body>
+
+</html>

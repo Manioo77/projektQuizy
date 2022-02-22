@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            margin: 0;
+            position: relative;
+            background-color: #a2dcca;
+        }
+
+        img {
+            border: none;
+        }
+
+        .wrapper {
+            width: 965px;
+            margin: 0 auto 200px;
+            position: relative;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-family: arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        h4 {
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 40px;
+        }
+
+        /* góra */
+        .danger {
+            position: absolute;
+            margin: 30px 872px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+        }
+
+        .warning {
+            position: relative;
+            margin: 0 700px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+
+        }
+
+        .reset {
+            position: relative;
+            margin: 0 600px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+        }
+
+
+        .logo {
+            display: block;
+            width: 190px;
+            height: 59px;
+            margin: 25px auto 25px 33px;
+            position: relative;
+            float: left;
+
+        }
+
+
+
+        .tlo_gora {
+            width: 967px;
+            margin: 0 auto;
+            height: 79px;
+            position: relative;
+
+        }
+
+        .gora {
+            width: 965px;
+            background-color: white;
+        }
+
+        /* nawigacja */
+
+        nav {
+            position: absolute;
+            top: 67px;
+            right: 20px;
+        }
+
+        nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+        }
+
+        nav li a {
+            padding: 40px 28px 12px 28px;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            font-size: 24px;
+            color: black;
+            background-color: white;
+        }
+
+        nav li a:hover {
+            background: black;
+            color: white;
+        }
+
+
+
+        .baner {
+            width: 965px;
+            min-height: 2800px;
+            margin: -200px auto 0 auto;
+            background-color: royalblue;
+        }
+
+        .cale {
+            text-align: justify;
+        }
+
+        .odp {
+            margin-left: 100px;
+        }
+
+        .quiz_1 {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 0 330px 50px;
+
+        }
+
+    </style>
+
+    <SCRIPT LANGUAGE="JavaScript">
+        <!-- Begin
+        var odp = new Array;
+        var twojaodp = new Array;
+
+        var punkty = 0;
+        odp[1] = "b";
+        odp[2] = "b";
+        odp[3] = "a";
+        odp[4] = "c";
+        odp[5] = "a";
+        odp[6] = "b";
+        odp[7] = "d";
+        odp[8] = "a";
+
+        function zliczanie(pytanie, odpowiedz) {
+            twojaodp[pytanie] = odpowiedz;
+        }
+
+        function Punkty() {
+
+            var odpowiedztekst = "Wynik\n";
+            for (i = 1; i <= 8; i++) {
+                odpowiedztekst = odpowiedztekst;
+                if (odp[i] != twojaodp[i]) {
+                    odpowiedztekst = odpowiedztekst;
+                } else {
+                    odpowiedztekst = odpowiedztekst;
+                    punkty++;
+                }
+            }
+
+            function odswiez() {
+                Punkty() = 0;
+            }
+            odpowiedztekst = odpowiedztekst + "\n\n Twoje punkty: " + punkty + "\n";
+
+            odpowiedztekst = odpowiedztekst + "\nKomentarz: ";
+            if (punkty <= 1) {
+                odpowiedztekst = odpowiedztekst + "NIESTETY musisz jeszcze popracować!";
+            }
+            if (punkty >= 2 && punkty <= 3) {
+                odpowiedztekst = odpowiedztekst + "Pracuj, Pracuj!";
+            }
+            if (punkty >= 4 && punkty <= 6) {
+                odpowiedztekst = odpowiedztekst + "Całkiem nieźle";
+            }
+            if (punkty == 7) {
+                odpowiedztekst = odpowiedztekst + "Bardzo dobrze";
+            }
+            if (punkty == 8) {
+                odpowiedztekst = odpowiedztekst + "Gratulacje jesteś mistrzem";
+            }
+            alert(odpowiedztekst);
+
+        }
+        //  End 
+
+        -->
+    </script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="tlo_gora">
+
+
+
+            <p>
+                <a href="logout.php" class="danger">Wyloguj</a>
+            </p>
+        </div>
+
+
+        <header class="gora">
+            <div class="logo">
+                <a href="logo.html">
+                    <img src="img/logo.jpg" alt="logo_strony_quizowanie">
+                </a>
+            </div>
+
+            <br class="clear">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="#">Ucz się</a></li>
+                    <li><a href="#">Nowe Quizy</a></li>
+                    <li><a href="popularne_quizy.html">Popularne Quizy</a></li>
+                    <li><a href="o_nas.html">O nas</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </div>
+    <div class="baner">
+
+        <div class="cale">
+            <h1>Quiz Cyberbezpieczeństwo</h1>
+
+            <img class="quiz_1" src="img/popularne_obraz_4.jpg" alt="obraz1">
+
+            <p align="justify">
+                <font face="Verdana">
+                    <h4>Pytanie 1/8 <br> Protokół transferu hipertekstu to?</h4>
+                    <p class="odp"><input type=radio name="q1" value="a" onClick="zliczanie(1, this.value)">a) POP</p>
+                    <p class="odp"><input type=radio name="q1" value="b" onClick="zliczanie(1, this.value)">b) HTTP</p>
+                    <p class="odp"><input type=radio name="q1" value="c" onClick="zliczanie(1, this.value)">c) TELNET</p>
+                    <p class="odp"><input type=radio name="q1" value="d" onClick="zliczanie(1, this.value)">d) FTP</p>
+                </font>
+            </p>
+            <p align="justify">
+                <font face="Verdana">
+                    <h4>Pytanie 2/8 <br> Co ma na celu phishing? </h4>
+                    <p class="odp"><input type=radio name="q2" value="a" onClick="zliczanie(2, this.value)">a) zachęcenie do wędkowania</p>
+                    <p class="odp"> <input type=radio name="q2" value="b" onClick="zliczanie(2, this.value)">b) wyłudzenie osobistych danych </p>
+                    <p class="odp"><input type=radio name="q2" value="c" onClick="zliczanie(2, this.value)">c) zatrzymanie ataku cybernetycznego</p>
+                    <p class="odp"><input type=radio name="q2" value="d" onClick="zliczanie(2, this.value)">d) wyłudzenie pieniędzy</p>
+                </font>
+            <p>
+                <font face="Verdana">
+                    <h4>Pytanie 3/8 <br> System RAID, który charakteryzuje się odpornością na awarię dwóch dowolnych dysków to? </h4>
+                    <p class="odp"><input type=radio name="q3" value="a" onClick="zliczanie(3, this.value)">a) RAID DP</p>
+                    <p class="odp"> <input type=radio name="q3" value="b" onClick="zliczanie(3, this.value)">b) RAID 1</p>
+                    <p class="odp"><input type=radio name="q3" value="c" onClick="zliczanie(3, this.value)">c) RAID 0</p>
+                    <p class="odp"><input type=radio name="q3" value="d" onClick="zliczanie(3, this.value)">d) RAID 4</p>
+                </font>
+            <p>
+                <font face="Verdana">
+                    <h4>Pytanie 4/8 <br> Metoda ataku komputerowego wykorzystująca lukę w zabezpieczeniach aplikacji polegającą na nieodpowiednim filtrowaniu lub niedostatecznym typowaniu danych użytkownika, które to dane są później wykorzystywane przy wykonaniu zapytań (SQL) do bazy danych to?</h4>
+                    <p class="odp"><input type=radio name="q4" value="a" onClick="zliczanie(4, this.value)">a) Brute Force</p>
+                    <p class="odp"><input type=radio name="q4" value="b" onClick="zliczanie(4, this.value)">b) Phishing</p>
+                    <p class="odp"><input type=radio name="q4" value="c" onClick="zliczanie(4, this.value)">c) SQL injection</p>
+                    <p class="odp"><input type=radio name="q4" value="d" onClick="zliczanie(4, this.value)">d) Spoofing</p>
+                </font>
+            <p>
+                <font face="Verdana">
+                    <h4>Pytanie 5/8 <br> Służy jako brama z jednej sieci do drugiej dla konkretnej aplikacji</h4>
+                    <p class="odp"><input type=radio name="q5" value="a" onClick="zliczanie(5, this.value)">a) firewall proxy</p>
+                    <p class="odp"><input type=radio name="q5" value="b" onClick="zliczanie(5, this.value)">b) pełnostanowy firewall</p>
+                    <p class="odp"><input type=radio name="q5" value="c" onClick="zliczanie(5, this.value)">c) pełnostanowy firewall</p>
+                    <p class="odp"><input type=radio name="q5" value="d" onClick="zliczanie(5, this.value)">d) system firewall nowej generacji</p>
+                </font>
+            <p>
+                <font face="Verdana">
+                    <h4>Pytanie 6/8 <br> Proces symulowania przez oprogramowanie istnienia zasobów logicznych, które wykorzystują ustalone podczas konfiguracji zasoby fizyczne to?</h4>
+                    <p class="odp"><input type=radio name="q6" value="a" onClick="zliczanie(6, this.value)">a) wizualizacja</p>
+                    <p class="odp"><input type=radio name="q6" value="b" onClick="zliczanie(6, this.value)">b) wirtualizacja</p>
+                    <p class="odp"><input type=radio name="q6" value="c" onClick="zliczanie(6, this.value)">c) symulacja</p>
+                    <p class="odp"> <input type=radio name="q6" value="d" onClick="zliczanie(6, this.value)">d) żadna z powyższych</p>
+                </font>
+            <p>
+                <font face="Verdana">
+                    <h4>Pytanie 7/8 <br> Rozwiązanie programowe wykorzystujące sposób działania aplikacji jako rozdzielnych procesów w stosunku do systemu operacyjnego to?</h4>
+                    <p class="odp"> <input type=radio name="q7" value="a" onClick="zliczanie(7, this.value)">a) wizualizacja</p>
+                    <p class="odp"><input type=radio name="q7" value="b" onClick="zliczanie(7, this.value)">b) wirtualizacja</p>
+                    <p class="odp"> <input type=radio name="q7" value="c" onClick="zliczanie(7, this.value)">c) symulacja</p>
+                    <p class="odp"> <input type=radio name="q7" value="d" onClick="zliczanie(7, this.value)">d) emulacja API</p>
+                </font>
+            <p>
+                <font face="Verdana">
+                    <h4>Pytanie 8/8 <br> Protokół tunelowania oparty na protokole IPsec opracowany przez Microsoft i Cisco to?</h4>
+                    <p class="odp"><input type=radio name="q8" value="a" onClick="zliczanie(8, this.value)">a) IKEv2</p>
+                    <p class="odp"> <input type=radio name="q8" value="b" onClick="zliczanie(8, this.value)">b) OpenVPN</p>
+                    <p class="odp"><input type=radio name="q8" value="c" onClick="zliczanie(8, this.value)">c) L2TP</p>
+                    <p class="odp"> <input type=radio name="q8" value="d" onClick="zliczanie(8, this.value)">d) SSTP</p>
+                </font>
+
+            <div>
+                <a href="index.html"><input class="warning" type="button" onClick="Punkty()" value="Wynik"></a>
+                <a href="quiz_4_odp.html" class="reset">Reset</a>
+            </div>
+        </div>
+</body>
+
+
+</html>

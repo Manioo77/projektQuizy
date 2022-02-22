@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Quiz">
+    <title>Pytania do quizów i odpowiedzi</title>
+    <style>
+        html {
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            margin: 0;
+            position: relative;
+            background-color: #a2dcca;
+        }
+
+        img {
+            border: none;
+        }
+
+        .wrapper {
+            width: 965px;
+            margin: 0 auto 200px;
+            position: relative;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-family: arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 40px;
+        }
+
+        /* góra */
+        .danger {
+            position: absolute;
+            margin: 30px 872px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+        }
+
+        .warning {
+            position: relative;
+            margin: 0 700px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+
+        }
+
+        .reset {
+            position: relative;
+            margin: 0 600px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+        }
+
+
+        .logo {
+            display: block;
+            width: 190px;
+            height: 59px;
+            margin: 25px auto 25px 33px;
+            position: relative;
+            float: left;
+
+        }
+
+
+
+        .tlo_gora {
+            width: 967px;
+            margin: 0 auto;
+            height: 79px;
+            position: relative;
+
+        }
+
+        .gora {
+            width: 965px;
+            background-color: white;
+        }
+
+        /* nawigacja */
+
+        nav {
+            position: absolute;
+            top: 67px;
+            right: 20px;
+        }
+
+        nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+        }
+
+        nav li a {
+            padding: 40px 28px 12px 28px;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            font-size: 24px;
+            color: black;
+            background-color: white;
+        }
+
+        nav li a:hover {
+            background: black;
+            color: white;
+        }
+
+
+
+        .baner {
+            width: 965px;
+            min-height: 700px;
+            margin: -200px auto 0 auto;
+            background-color: royalblue;
+        }
+
+        .cale {
+            text-align: justify;
+        }
+
+        .odp {
+            margin-left: 100px;
+        }
+
+        .quiz_1 {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin: 0 330px 50px;
+
+        }
+
+        .quizy {
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .zdjecie {
+            padding: 40px;
+        }
+
+        h3 {
+            font-size: 34px;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .wkrotce {
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            margin: 0 0 100px 0;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="tlo_gora">
+
+
+
+            <p>
+                <a href="logout.php" class="danger">Wyloguj</a>
+            </p>
+        </div>
+
+
+        <header class="gora">
+            <div class="logo">
+                <a href="logo.html">
+                    <img src="img/logo.jpg" alt="logo_strony_quizowanie">
+                </a>
+            </div>
+
+            <br class="clear">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="uczSie.html">Ucz się</a></li>
+                    <li><a href="nowe_quizy.html">Nowe Quizy</a></li>
+                    <li><a href="popularne_quizy.html">Popularne Quizy</a></li>
+                    <li><a href="o_nas.html">O nas</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </div>
+    <div class="baner">
+        <h3>Nowe Quizy:</h3>
+        <p class="quizy">
+            <a href="quiz_5_odp.html" class="zdjecie"><img src="img/popularne_obraz_5.jpg" alt="obraz5"></a>
+            <a href="quiz_6_odp.html" class="zdjecie"><img src="img/popularne_obraz_6.jpg" alt="obraz6"></a>
+        </p>
+
+        <h3>Już wkrótce:</h3>
+        <p class="quizy">
+            <img class="wkrotce" src="img/popularne_obraz_7.jpg" alt="obraz7">
+            <img class="wkrotce" src="img/popularne_obraz_8.jpg" alt="obraz8">
+        </p>
+    </div>
+
+</body>
+
+</html>

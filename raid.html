@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: arial;
+            margin: 0;
+            position: relative;
+            width: 965px;
+            margin: 0 auto 0;
+            position: relative;
+            background-color: #a2dcca;
+            font-size: 18px;
+        }
+
+        img {
+            border: none;
+        }
+
+        .wrapper {
+            width: 965px;
+            margin: 0 auto 200px;
+            position: relative;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        h2 {
+            padding: 20px;
+            margin: 50px auto 20px;
+            font-family: arial, Helvetica, sans-serif;
+            font-weight: normal;
+            color: gold;
+            width: 965px;
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 40px;
+        }
+
+        /* góra */
+        .danger {
+            position: absolute;
+            margin: 30px 852px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+        }
+
+        .warning {
+            position: relative;
+            margin: 0 700px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+
+        }
+
+        .reset {
+            position: relative;
+            margin: 0 600px;
+            background: #6499db;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: 20px;
+            padding: 10px 20px 10px 20px;
+            border: 2px solid black;
+            font-family: arial;
+        }
+
+
+        .logo {
+            display: block;
+            width: 190px;
+            height: 59px;
+            margin: 25px auto 25px 33px;
+            position: relative;
+            float: left;
+        }
+
+
+        .tlo_gora {
+            width: 967px;
+            margin: 0 auto;
+            height: 79px;
+            position: relative;
+
+        }
+
+        .gora {
+            width: 965px;
+            background-color: white;
+        }
+
+        /* nawigacja */
+
+        nav {
+            position: absolute;
+            top: 67px;
+            right: 20px;
+        }
+
+        nav li {
+            list-style: none;
+            float: left;
+            position: relative;
+        }
+
+        nav li a {
+            padding: 40px 28px 12px 28px;
+            text-decoration: none;
+            display: block;
+            font-family: 'Bebas Neue', cursive, arial, sans-serif;
+            font-size: 24px;
+            color: black;
+            background-color: white;
+        }
+
+        nav li a:hover {
+            background: black;
+            color: white;
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: darkblue;
+        }
+
+        .article {
+            margin-top: -100px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="tlo_gora">
+
+
+
+            <p>
+                <a href="logout.php" class="danger">Wyloguj</a>
+            </p>
+        </div>
+
+
+        <header class="gora">
+            <div class="logo">
+                <a href="logo.html">
+                    <img src="img/logo.jpg" alt="logo_strony_quizowanie">
+                </a>
+            </div>
+            <br class="clear">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Start</a></li>
+                    <li><a href="uczSie.html">Ucz się</a></li>
+                    <li><a href="nowe_quizy.html">Nowe Quizy</a></li>
+                    <li><a href="popularne_quizy.html">Popularne Quizy</a></li>
+                    <li><a href="o_nas.html">O nas</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </div>
+
+    <div class="article">
+        <h2>RAID: </h2>
+        <p>(ang. Redundant Array of Independent Disks, Nadmiarowa macierz niezależnych dysków) – polega na współpracy dwóch lub więcej dysków twardych w taki sposób, aby zapewnić dodatkowe możliwości, nieosiągalne przy użyciu jednego dysku jak i kilku dysków podłączonych indywidualnie.</p>
+        <pre>RAID używa w celu:
+        zwiększenia niezawodności (odporność na awarie),
+        zwiększenia wydajności transmisji danych,
+        powiększenia przestrzeni dostępnej jako jedna całość.
+        Przyjrzyjmy się bliżej najpopularniejszym standardom:
+        </pre>
+
+        <h2>RAID 0: </h2>
+        <p>Jest to tzw. stripe. Dane zapisywane są na kilku dyskach, np. pierwszy blok na pierwszym dysku, drugi na drugim itd. Dzięki temu uzyskujemy znaczne przyspieszenie operacji odczytu i zapisu. Wadą tego systemu jest brak odporności na awarię. Jeśli dowolny dysk ulegnie uszkodzeniu, to najczęściej tracimy wszystkie dane, gdyż każdy dysk zawiera tylko część danych.</p>
+
+        <h2>RAID 1: </h2>
+        <p>Jest to tzw. mirroring (lustro). Czyli połowa dysków zawiera dane a druga połowa jest ich dokładną kopią. W tym przypadku jesteśmy zabezpieczeni na awarię każdego z dysków, jednakże tracimy 50% całkowitej pojemności.
+            Przykład: dwa dyski, każdy o pojemności 1 TB połączone razem w RAID1, mają łączną pojemność 1 TB (drugi zawiera to samo co pierwszy).
+        </p>
+
+        <h2>RAID 10: </h2>
+        <p>To połączenie RAID 0 z RAID 1, nazywany również RAID 1+0. W tym przypadku dane są zapisywane na połowie dysków jako stripe(RAID-0), a druga połowa jest ich lustrzaną kopią (RAID-1) – mirroring.
+            Jesteśmy odporni na awarię jednego dysku lub nawet dwóch, ale nie dowolnych dwóch.
+            Należy jednak pamiętać, iż w przypadku awarii dysku i jego lustrzanej kopii (mirroru), wszystkie dane zostaną utracone. Z tego względu w macierzach NetApp serii FAS używany jest RAID-DP jako alternatywa dla RAID-10.
+        </p>
+
+
+        <h2>RAID 4: </h2>
+        <p>W RAID 4 dane zapisywane są na kilku dyskach, a dodatkowo na osobnym dysku są umieszczne sumy kontrolne, które w przypadku awarii jednego z dysków umożliwiają jego odtworzenie poprzez wykonanie określonych operacji matematycznych. </p>
+
+        <h2>RAID 5 : </h2>
+        <p>W przypadku RAID-5 dane są również zapisane na wszystkich dostępnych dyskach, tak jak ma to miejsce w przypadku RAID4. Z tą różnicą jednak, że częściowe sumy kontrolne są rozłożone na wszystkie dyski.
+            Takie rozwiązanie ma jednak zasadniczą wadę. Po awarii jednego z dysków, macierz musi odbudować sumy kontrolne, obciążając mocno system. Drugi aspekt to rozbudowa – jeśli chcemy dołożyć do istniejącego systemu dodatkowy dysk, cała macierz musi zostać przebudowana.
+            RAID-5 jest odporny na awarię wyłączenie jednego dysku
+        </p>
+
+        <h2>RAID DP: </h2>
+        <p>Jest to opatentowany przez firmę NetApp system RAID, który charakteryzuje się odpornością na awarię dwóch dowolnych dysków (DP – Dual Parity). Jest to modyfikacja RAID 4, z tą różnicą, że zamiast jednego mamy do dyspozycji dwa dyski parzystości, każdy w inny sposób przelicza sumy kontrolne. </p>
+
+        <h2>JBOD: </h2>
+        <p>Warto również wspomnieć o pojęciu JBOD (ang. Just a Bunch Of Disks). Jest to zwykłe połączenie dysków, bez użycia technologii RAID. JBOD, w przeciwieństwie do RAID, nie daje korzyści w postaci przyspieszenia operacji zapisu/odczytu czy zwiększenia bezpieczeństwa danych. </p>
+
+
+    </div>
+</body>
+
+</html>
